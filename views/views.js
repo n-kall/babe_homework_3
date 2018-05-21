@@ -115,9 +115,9 @@ var practiceForcedChoice = {
             trial_data = {
                 trial_type: "practice",
                 trial_number: CT+1,
-                question: exp.trialInfo.question,
-                option1: exp.trialInfo.option1,
-                option2: exp.trialInfo.option2,
+                question: trialInfo.question,
+                option1: trialInfo.option1,
+                option2: trialInfo.option2,
                 option_chosen: $('input[name=answer]:checked').val(),
                 RT: RT
             };
@@ -171,9 +171,9 @@ var practiceSliderRating = {
             trial_data = {
                 trial_type: "practiceSliderRating",
                 trial_number: CT+1,
-                question: exp.trialInfo.question,
-                option1: exp.trialInfo.option1,
-                option2: exp.trialInfo.option2,
+                question: trialInfo.question,
+                option1: trialInfo.option1,
+                option2: trialInfo.option2,
                 rating_slider: response.val(),
                 RT: RT
             };
